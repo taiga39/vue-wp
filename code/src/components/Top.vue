@@ -1,44 +1,66 @@
 <template>
-  <div id="content" class="site-content">
-    <div id="primary" class="content-area">
-      <main id="main" class="site-main">
-        <div class="post-summary post-full-summary">
-          <article id="post-53" class="post-53 post type-post status-publish format-standard hentry category-1">
-            <header class="entry-header">
-              <div class="entry-float">
-                          <div class="entry-meta">
-            <span class="posted-on">
-            <a href="http://localhost/2020/07/11/%e3%83%bb%e3%83%86%e3%82%b9%e3%83%88%ef%bc%92/" rel="bookmark"><time class="entry-date published updated" datetime="2020-07-11T02:06:31+09:00">2020年7月11日</time></a>		</span>
-          </div><!-- .entry-meta -->
-                </div><!-- .entry-float -->
-              <h2 class="entry-title"><a href="http://localhost/2020/07/11/%e3%83%bb%e3%83%86%e3%82%b9%e3%83%88%ef%bc%92/" rel="bookmark">・テスト２</a></h2>
-            </header><!-- .entry-header -->
-            <div class="entry-summary">
-                  </div><!-- .entry-summary -->
-          </article><!-- #post-## -->
-        </div><!-- .post-summary -->
-            
-              
-        <div class="post-summary post-full-summary">
-          <article id="post-51" class="post-51 post type-post status-publish format-standard hentry category-1">
-            <header class="entry-header">
-              <div class="entry-float">
-                          <div class="entry-meta">
-            <span class="posted-on">
-            <a href="http://localhost/2020/07/11/%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/" rel="bookmark"><time class="entry-date published updated" datetime="2020-07-11T02:06:23+09:00">2020年7月11日</time></a>		</span>
-          </div><!-- .entry-meta -->
-                </div><!-- .entry-float -->
-              <h2 class="entry-title"><a href="http://localhost/2020/07/11/%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/" rel="bookmark">投稿テスト</a></h2>
-            </header><!-- .entry-header -->
-            <div class="entry-summary">
-                  </div><!-- .entry-summary -->
-          </article><!-- #post-## -->
-        </div><!-- .post-summary -->
-          
-          
-        
-      </main><!-- #main -->
-    </div><!-- #primary -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Man must explore, and this is exploration at its greatest
+            </h2>
+            <h3 class="post-subtitle">
+              Problems look mighty small from 150 miles up
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on September 24, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+            </h2>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on September 18, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Science has not yet mastered prophecy
+            </h2>
+            <h3 class="post-subtitle">
+              We predict too much for the next year and yet far too little for the next ten.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on August 24, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Failure is not an option
+            </h2>
+            <h3 class="post-subtitle">
+              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on July 8, 2019</p>
+        </div>
+        <hr>
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

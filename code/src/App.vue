@@ -1,5 +1,6 @@
 <template>
-  <div id="app" class="hfeed site">
+  <div id="app">
+    <Nav/>
     <Headeritem/>
     <!-- <h3>Vue Router 入門</h3>
     <router-link to="/">ページ１へ</router-link>
@@ -8,17 +9,20 @@
   </div>
 </template>
 <script>
-import Headeritem from './components/Header'
+import Headeritem from './components/Header';
+import Nav from './components/Nav';
+
 export default {
     name: 'app',
     components : {
-      Headeritem
+      Headeritem,
+      Nav
   }
 }
 </script>
 <style>
-@import "./assets/style.css";
-/* @import "./assets/jquery.js";
-@import "./assets/jquery-migrate.min.js";
-@import "./assets/script.js"; */
+@import "assets/css/clean-blog.min.css";
+@import "assets/css/bootstrap.min.css";
+@import "assets/css/all.min.css";
+
 </style>
