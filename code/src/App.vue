@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <Headeritem/>
-    <h3>Vue Router 入門</h3>
+    <!-- <h3>Vue Router 入門</h3>
     <router-link to="/">ページ１へ</router-link>
-    <router-link to="/hage">ページ２へ</router-link>
+    <router-link to="/hage/3">ページ２へ</router-link> -->
     <router-view></router-view>
   </div>
 </template>
@@ -17,12 +17,8 @@ export default {
 }
 </script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./assets/style.css";
+/* @import "./assets/jquery.js";
+@import "./assets/jquery-migrate.min.js";
+@import "./assets/script.js"; */
 </style>

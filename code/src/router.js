@@ -11,7 +11,7 @@ const routes =  [
         component: Top 
     },
     { 
-        path: '/hage', 
+        path: '/hage/:id', 
         component: Hage
     },
 ];
