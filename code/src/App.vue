@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="hfeed site">
     <Headeritem/>
     <!-- <h3>Vue Router 入門</h3>
     <router-link to="/">ページ１へ</router-link>
