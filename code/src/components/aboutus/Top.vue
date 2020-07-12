@@ -1,4 +1,6 @@
 <template>
+<div>
+  <Headeritem/>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
@@ -62,12 +64,19 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
+import Headeritem from './Header';
+export default {
+    name: 'app',
+    components : {
+      Headeritem
+  }
+}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 </style>

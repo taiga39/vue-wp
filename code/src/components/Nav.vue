@@ -8,16 +8,22 @@
         <div class="collapse navbar-collapse" v-bind:class='{show:isActive}' id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <router-link to="/" class="nav-link">Home</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <router-link to="/report" class="nav-link">Report</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="post.html">Sample Post</a>
+                    <router-link to="/portfolio" class="nav-link">Portfolio</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <router-link to="/blog" class="nav-link">Blog</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/aboutus" class="nav-link">Abouy us</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/tech" class="nav-link">Tech</router-link>
                 </li>
             </ul>
         </div>

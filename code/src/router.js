@@ -1,7 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Top from './components/Top.vue';
-import Hage from './components/HelloWorld.vue';
+import Top from './components/top/Top.vue';
+import Report from './components/report/Top.vue';
+import Port from './components/port/Top.vue';
+import Blog from './components/blog/Top.vue';
+import About from './components/aboutus/Top.vue';
+import Tech from './components/tech/Top.vue';
+
 
 Vue.use(VueRouter);
 
@@ -11,8 +16,24 @@ const routes =  [
         component: Top 
     },
     { 
-        path: '/hage/:id', 
-        component: Hage
+        path: '/report', 
+        component: Report
+    },
+    { 
+        path: '/portfolio', 
+        component: Port
+    },
+    { 
+        path: '/blog', 
+        component: Blog
+    },
+    { 
+        path: '/aboutus', 
+        component: About
+    },
+    { 
+        path: '/tech', 
+        component: Tech
     },
 ];
 
