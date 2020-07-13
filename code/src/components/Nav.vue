@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand" href="index.html">Michopa Love</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" v-on:click='isActive=!isActive'>
             Menu
         </button>
@@ -20,7 +20,7 @@
                     <router-link to="/blog" class="nav-link">Blog</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/aboutus" class="nav-link">Abouy us</router-link>
+                    <router-link to="/aboutus" class="nav-link">Road Map</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link to="/tech" class="nav-link">Tech</router-link>
