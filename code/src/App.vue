@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Nav/>
-    <router-view></router-view>
+    <Nav :jsondata="jsondata" />
+    <router-view :jsondata="jsondata"/>
   </div>
 </template>
 <script>
@@ -12,17 +12,23 @@ export default {
   components : {
     Nav
   },
-  created() {
-  this.$axios
-    .get("http://localhost/json/json.php")
-    .then(response => {
-      console.log(response.data);
-    })
-    .catch(err => {
-      (this.errored = true), (this.error = err);
-    })
-    .finally(() => (this.loading = false));
-  }
+  data(){
+    return{
+      jsondata: ""
+    }
+  },
+  beforeCreate() {
+    this.$axios
+      .get("http://localhost/json/json.php")
+      .then(response => {
+        var responsedata = response.data
+        this.jsondata = responsedata
+      })
+      .catch(err => {
+        (this.errored = true), (this.error = err);
+      })
+      .finally(() => (this.loading = false));
+  },
 }
 </script>
 <style>

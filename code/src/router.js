@@ -17,7 +17,8 @@ const routes =  [
     },
     { 
         path: '/report', 
-        component: Report
+        component: Report,
+        props: true
     },
     { 
         path: '/portfolio', 
