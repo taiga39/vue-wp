@@ -1,22 +1,16 @@
 <template>
     <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-            <a href="post.html">
+        <div v-for="json in jsondata.report" :key="json.link" class="post-preview">
+            <a v-bind:href="'/report/' + json.link">
                 <h2 class="post-title">
-                    Manaa must explore, and this is exploration at its greatest
+                    {{json.title}}
                 </h2>
-                <h3 class="post-subtitle">
-                    Problems look mighty small from 150 miles up
-                </h3>
             </a>
-            <p class="post-meta">
-                Posted by
-                <a href="#">Start Bootstrap</a>
-                on September 24, 2019    
+            <p class="post-meta" style="padding-left:1em">
+                Posted 
+                on {{json.date}}  
             </p>
-            {{jsondata.report}}
         </div>
-        <!-- Pager -->
         <div class="clearfix">
             <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
@@ -25,9 +19,23 @@
 
 <script>
 export default {
+    data(){
+        return{
+            jsonlength: 0
+        }
+    },
     props:["jsondata"],
-    mounted(){
-        console.log(JSON.parse(JSON.stringify(this.jsondata)))
+    mounted() {
+        if(this.jsondata.report != null){
+            this.jsonlength = JSON.parse(JSON.stringify(Object.keys(this.jsondata.report).length))
+        }
+    },
+    watch: {
+        jsondata:function(one){
+            this.jsonlength = JSON.parse(JSON.stringify(Object.keys(one.report).length))
+        }
     }
 }
 </script>
+
+// v-for="report in jsondata" :key="report" 

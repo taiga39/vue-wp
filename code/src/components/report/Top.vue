@@ -19,9 +19,6 @@ export default {
       Child
   },
   props:["jsondata"],
-  mounted(){
-      console.log("sss")
-  },
 }
 </script>
 

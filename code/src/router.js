@@ -6,6 +6,8 @@ import Port from './components/port/Top.vue';
 import Blog from './components/blog/Top.vue';
 import About from './components/aboutus/Top.vue';
 import Tech from './components/tech/Top.vue';
+import BlogContent from './components/content/Top.vue';
+
 
 
 Vue.use(VueRouter);
@@ -18,7 +20,6 @@ const routes =  [
     { 
         path: '/report', 
         component: Report,
-        props: true
     },
     { 
         path: '/portfolio', 
@@ -27,6 +28,10 @@ const routes =  [
     { 
         path: '/blog', 
         component: Blog
+    },
+    { 
+        path: '/blog/:id', 
+        component: BlogContent
     },
     { 
         path: '/aboutus', 

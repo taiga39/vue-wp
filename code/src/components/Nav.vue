@@ -38,9 +38,6 @@ export default {
       }
     },
     props:["jsondata"],
-    mounted(){
-        console.log(this.jsondata)
-    },
     watch: {
         jsondata:function(one,two){
             console.log(JSON.parse(JSON.stringify(one)))
