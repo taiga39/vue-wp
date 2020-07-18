@@ -6,7 +6,7 @@ import Port from './components/port/Top.vue';
 import Blog from './components/blog/Top.vue';
 import About from './components/aboutus/Top.vue';
 import Tech from './components/tech/Top.vue';
-import BlogContent from './components/content/Top.vue';
+import Content from './components/content/Top.vue';
 
 
 
@@ -31,7 +31,15 @@ const routes =  [
     },
     { 
         path: '/blog/:id', 
-        component: BlogContent
+        component: Content
+    },
+    { 
+        path: '/report/:id', 
+        component: Content
+    },
+    { 
+        path: '/tech/:id', 
+        component: Content
     },
     { 
         path: '/aboutus', 

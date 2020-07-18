@@ -1,11 +1,11 @@
 <template>
     <div class="col-lg-8 col-md-10 mx-auto">
         <div v-for="json in jsondata.report" :key="json.link" class="post-preview">
-            <a v-bind:href="'/report/' + json.link">
+            <router-link v-bind:to="'/report/' + json.link">
                 <h2 class="post-title">
                     {{json.title}}
                 </h2>
-            </a>
+            </router-link>
             <p class="post-meta" style="padding-left:1em">
                 Posted 
                 on {{json.date}}  

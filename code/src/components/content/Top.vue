@@ -1,6 +1,7 @@
 <template>
 <div>
   <Headeritem/>
+  {{jsondata[category][article]}}
   <article>
     <div class="container">
       <div class="row">
@@ -51,9 +52,22 @@
 <script>
 import Headeritem from './Header';
 export default {
-    name: 'app',
-    components : {
+  name: 'app',
+  components : {
       Headeritem
+  },
+  data(){
+    return{
+      articledata:"",
+      category: "",
+      article:""
+    }
+  },
+  props:["jsondata"],
+  created(){
+      this.category = (this.$route.path).split('/')[1]
+      this.article = (this.$route.path).split('/')[2]
+
   }
 }
 </script>
