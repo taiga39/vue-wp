@@ -30,9 +30,6 @@ export default {
       .finally(() => (this.loading = false));
   },
   mounted(){
-      console.log((this.$route.path).split('/'))
-      console.log(this.$route.path)
-
   }
 }
 </script>

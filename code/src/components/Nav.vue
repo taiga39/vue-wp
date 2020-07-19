@@ -38,11 +38,5 @@ export default {
       }
     },
     props:["jsondata"],
-    watch: {
-        jsondata:function(one,two){
-            console.log(JSON.parse(JSON.stringify(one)))
-            console.log(two)
-        }
-    }
 }
 </script>
