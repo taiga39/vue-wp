@@ -6,7 +6,7 @@
             Menu
         </button>
         <div class="collapse navbar-collapse" v-bind:class='{show:isActive}' id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto" v-on:click='isActive=!isActive'>
                 <li class="nav-item">
                     <router-link to="/" class="nav-link">Home</router-link>
                 </li>

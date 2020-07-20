@@ -1,4 +1,6 @@
 <template>
+<div>
+    <h2 class="graph-h">Blog</h2>
     <div class="post-preview">
         <a href="post.html">
             <h2 class="post-title">
@@ -13,4 +15,17 @@
             on September 24, 2019
         </p>
     </div>
+    <div class="clearfix">
+        <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+    </div>
+</div>
 </template>
+
+<style scoped>
+.graph-h{
+    text-align:center;
+    padding:1rem;
+    font-size:3em;
+    font-weight:bold;
+}
+</style>
