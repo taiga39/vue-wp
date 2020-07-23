@@ -10,13 +10,13 @@
           <li v-on:click="change(3)" v-bind:class="{'active': isActive === 3}">タブ3</li>
         </ul>
         <ul>
-          <li v-if="isActive === 1">
+          <li v-if="isActive === 1" style="list-style:none;">
             <Child/> 
           </li>
-          <li v-else-if="isActive === 2">
+          <li v-else-if="isActive === 2" style="list-style:none;">
             <Child/> 
           </li>
-          <li v-else-if="isActive === 3">
+          <li v-else-if="isActive === 3" style="list-style:none;">
             <Child/> 
           </li>
         </ul>

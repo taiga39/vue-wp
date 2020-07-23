@@ -2,7 +2,7 @@
 <div>
   <Headeritem/>
   <div class="container">
-    <Graph/>
+    <Graph :jsondata="jsondata"/>
     <div class="row">
       <Child :jsondata="jsondata"/>
     </div>
