@@ -227,14 +227,6 @@ export default {
                 this.htoefl = (this.jsondata.target.arm - 30) /70  * 186 + "px"
             }
         }
-        var today = new Date();
-        var year = today.getFullYear();
-        var month = today.getMonth() + 1;
-        var day = today.getDate();
-        var date1 = new Date(year ,month ,day);
-        var date2 = new Date(2023, 5, 12);
-        var termDay = (date2 - date1) / 86400000;
-        console.log(termDay);
     },
     watch: {
         jsondata:function(one){

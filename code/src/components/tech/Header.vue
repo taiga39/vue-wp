@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Tech Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h1>技術ログ</h1>
+            <span class="subheading">少し専門的、技術的なことはこちら</span>
           </div>
         </div>
       </div>

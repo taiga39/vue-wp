@@ -20,7 +20,7 @@
                     <router-link to="/blog" class="nav-link">Blog</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/aboutus" class="nav-link">Road Map</router-link>
+                    <router-link to="/aboutus" class="nav-link">About Me</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link to="/tech" class="nav-link">Tech</router-link>

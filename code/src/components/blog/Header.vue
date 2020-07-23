@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>All Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h1>ブログ</h1>
+            <span class="subheading">いわゆるウェブログ</span>
           </div>
         </div>
       </div>

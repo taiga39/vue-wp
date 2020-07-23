@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Report</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h1>レポート</h1>
+            <span class="subheading">主に英語の勉強と筋トレの記録</span>
           </div>
         </div>
       </div>
