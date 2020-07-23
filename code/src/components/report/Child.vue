@@ -1,5 +1,6 @@
 <template>
     <div class="col-lg-8 col-md-10 mx-auto">
+        <h2 class="graph-h">Report</h2>
         <div v-for="json in jsondata.report" :key="json.link" class="post-preview">
             <router-link v-bind:to="'/report/' + json.link">
                 <h2 class="post-title">
@@ -38,4 +39,11 @@ export default {
 }
 </script>
 
-// v-for="report in jsondata" :key="report" 
+<style scoped>
+.graph-h{
+    text-align:center;
+    padding:1rem;
+    font-size:3em;
+    font-weight:bold;
+}
+</style>
