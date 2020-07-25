@@ -1,18 +1,15 @@
 <template>
 <div>
-    <h2 class="graph-h">Blog</h2>
-    <div class="post-preview">
-        <a href="post.html">
-            <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
+    <h2 class="graph-h">{{catename}}</h2>
+    <div class="post-preview" v-for="n of jsonlength" :key="n">
+        <router-link v-bind:to="'/' + catename + '/' + jsontab[n-1].link">
+            <h2 class="p">
+                {{jsontab[n-1].title}}
             </h2>
-            <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
-        </a>
-        <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019
+        </router-link>
+        <p class="post-meta" style="padding-left:1em">
+            Posted 
+            on {{jsontab[n-1].date}}  
         </p>
     </div>
     <div class="clearfix">
@@ -29,3 +26,37 @@
     font-weight:bold;
 }
 </style>
+
+<script>
+export default {
+    data(){
+        return{
+            jsonlength: 0,
+            jsontab:""
+        }
+    },
+    props:["jsondata","catename"],
+    mounted() {
+        if(this.jsondata != null){
+            console.log(JSON.parse(JSON.stringify(this.jsondata)))
+            if(JSON.parse(JSON.stringify(Object.keys(this.jsondata).length)) < 5){
+                this.jsonlength = JSON.parse(JSON.stringify(Object.keys(this.jsondata).length))
+            }else{
+                this.jsonlength = 5
+            }
+            this.jsontab = Object.values(this.jsondata)
+        }
+    },
+    watch: {
+        jsondata:function(one){
+            console.log(JSON.parse(JSON.stringify(one)))
+            if(JSON.parse(JSON.stringify(Object.keys(one).length)) < 5){
+                this.jsonlength = JSON.parse(JSON.stringify(Object.keys(one).length))
+            }else{
+                this.jsonlength = 5
+            }
+            this.jsontab = Object.values(one);
+        }
+    }
+}
+</script>

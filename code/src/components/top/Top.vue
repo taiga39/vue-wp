@@ -11,13 +11,13 @@
         </ul>
         <ul>
           <li v-if="isActive === 1" style="list-style:none;">
-            <Child/> 
+            <Child :jsondata="jsondata.report" :catename="report" /> 
           </li>
           <li v-else-if="isActive === 2" style="list-style:none;">
-            <Child/> 
+            <Child :jsondata="jsondata.blog" :catename="blog" /> 
           </li>
           <li v-else-if="isActive === 3" style="list-style:none;">
-            <Child/> 
+            <Child :jsondata="jsondata.tech" :catename="tech"/> 
           </li>
         </ul>
 
@@ -38,9 +38,13 @@ export default {
   },
   data(){
     return{
-      isActive: 1
+      isActive: 1,
+      report: "report",
+      blog:"blog",
+      tech:"tech"
     }
   },
+  props:["jsondata"],
   methods: {
     change: function(num){
       this.isActive = num
