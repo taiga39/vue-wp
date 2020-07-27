@@ -47,5 +47,3 @@ export default {
 <style scoped>
 
 </style>
-
-// [(this.$route.path).split('/')[1]][(this.$route.path).split('/')[2]]["content"]

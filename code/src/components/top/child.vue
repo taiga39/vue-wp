@@ -1,6 +1,5 @@
 <template>
 <div>
-    <h2 class="graph-h">{{catename}}</h2>
     <div class="post-preview" v-for="n of jsonlength" :key="n">
         <router-link v-bind:to="'/' + catename + '/' + jsontab[n-1].link">
             <h2 class="p">
@@ -60,3 +59,16 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+@media screen and (max-width:550px) {
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+.post-preview{
+    width:80%;
+    margin:30px auto;
+}
+</style>
