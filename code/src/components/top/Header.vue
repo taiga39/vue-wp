@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1 style="font-size:6vw">みちょぱと付き合う</h1>
-            <span class="subheading">30歳まで残り<span style="color:red;">{{termday}}</span>日しかない</span>
+            <h1 style="font-size:6vw;font-weight:800;">コーコーキウイ</h1>
+            <span class="subheading">高校生をやり直すブログ</span>
           </div>
         </div>
       </div>
