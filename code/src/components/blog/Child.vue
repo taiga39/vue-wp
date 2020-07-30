@@ -12,7 +12,7 @@
             </p>
         </div>
         <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+            <a class="btn btn-primary float-right" href="#">More Posts &rarr;</a>
         </div>
     </div>
 </template>

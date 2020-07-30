@@ -12,7 +12,7 @@
         </p>
     </div>
     <div class="clearfix">
-        <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        <router-link class="btn btn-primary float-right" v-bind:to="'/' + catename">More Posts &rarr;</router-link>
     </div>
 </div>
 </template>
