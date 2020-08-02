@@ -1,16 +1,16 @@
 <template>
     <div class="col-lg-8 col-md-10 mx-auto">
-        <div v-for="json in jsondata.tech" :key="json.link" class="post-preview">
-            <router-link v-bind:to="'/tech/' + json.link">
+        <router-link v-bind:to="'/tech/' + json.link" v-for="json in jsondata.tech" :key="json.link" class="post-preview">
+            <div>
                 <h2 class="post-title">
                     {{json.title}}
                 </h2>
-            </router-link>
+            </div>
             <p class="post-meta" style="padding-left:1em">
                 Posted 
                 on {{json.date}}  
             </p>
-        </div>
+        </router-link>
         <div class="clearfix">
             <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
