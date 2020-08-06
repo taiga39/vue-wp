@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1 style="font-weight:800;">コーコーキウイ</h1>
-            <span class="subheading">高校生をやり直すブログ</span>
+            <h1 style="font-weight:800;">キラキラテック</h1>
+            <span class="subheading"></span>
           </div>
         </div>
       </div>
