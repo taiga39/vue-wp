@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <router-link class="navbar-brand" to="/">Koko Kiwi</router-link>
+        <router-link class="navbar-brand" to="/">Gal☆Blog</router-link>
         <button class="navbar-toggler navbar-toggler-right" type="button" v-on:click='isActive=!isActive'>
             Menu
         </button>

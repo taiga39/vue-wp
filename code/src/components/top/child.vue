@@ -37,7 +37,6 @@ export default {
     props:["jsondata","catename"],
     mounted() {
         if(this.jsondata != null){
-            console.log(JSON.parse(JSON.stringify(this.jsondata)))
             if(JSON.parse(JSON.stringify(Object.keys(this.jsondata).length)) < 5){
                 this.jsonlength = JSON.parse(JSON.stringify(Object.keys(this.jsondata).length))
             }else{
@@ -48,7 +47,6 @@ export default {
     },
     watch: {
         jsondata:function(one){
-            console.log(JSON.parse(JSON.stringify(one)))
             if(JSON.parse(JSON.stringify(Object.keys(one).length)) < 5){
                 this.jsonlength = JSON.parse(JSON.stringify(Object.keys(one).length))
             }else{

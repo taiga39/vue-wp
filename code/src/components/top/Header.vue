@@ -1,11 +1,11 @@
 <template>
-  <header class="masthead" :style="{ 'background-image': 'url(' + assetsImage + ')' }">
+  <header class="masthead">
     <!-- <div class="overlay"></div> -->
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1 style="font-weight:800;">キラキラテック</h1>
+            <h1 style="font-weight:800;">Gal☆Blog</h1>
             <span class="subheading"></span>
           </div>
         </div>
@@ -14,12 +14,12 @@
   </header>
 </template>
 <script>
-import AssetsImage from "@/assets/images/back.png";
+// import AssetsImage from "@/assets/images/back.png";
 export default {
     data(){
         return{
           termday:10000,
-          assetsImage: AssetsImage,
+          // assetsImage: AssetsImage,
         }
     },
   mounted(){
