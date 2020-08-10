@@ -34,3 +34,47 @@ p{
 .btn-primary{
     margin-top:10px;
 }
+.pagenation{
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.pagenation li{
+    margin: 0 10px 0 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    font-size: 13px;
+    font-family: "Noto Sans Japanese",'メイリオ', 'Hiragino Kaku Gothic ProN', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #777;
+    list-style: none;
+}
+
+.pagenation li button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    font-size: 13px;
+    font-family: "Noto Sans Japanese",'メイリオ', 'Hiragino Kaku Gothic ProN', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #777;
+    border:none;
+}
+.pagenation .active button{
+    background: #bbb;
+}

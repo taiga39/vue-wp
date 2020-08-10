@@ -12,11 +12,13 @@
                 on {{jsontab[i].date}}  
             </p>
         </router-link>
-        <div>
-            <button v-for="p of pagelength" :key="p+'p'" v-on:click="pagenation(p)" class="page btn btn-primary">
-                {{p}}
-            </button>
-        </div>
+        <ul class="pagenation">
+            <li v-for="p of pagelength" :key="p+'p'" v-bind:class="{ active: page === p-1 }">
+                <button v-on:click="pagenation(p);active()">
+                    {{p}}
+                </button>
+            </li>
+        </ul>
     </div>
 </template>
 
