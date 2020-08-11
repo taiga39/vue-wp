@@ -1,5 +1,5 @@
 <template>
-  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+  <header class="masthead">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -13,3 +13,10 @@
     </div>
   </header>
 </template>
+<style scoped>
+header{
+  background-image:url('~@/assets/images/back2.jpg');
+  background-repeat:none;
+  background-size:cover;
+}
+</style>

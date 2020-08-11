@@ -1,6 +1,6 @@
 <template>
   <header class="masthead">
-    <!-- <div class="overlay"></div> -->
+    <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
@@ -14,12 +14,10 @@
   </header>
 </template>
 <script>
-// import AssetsImage from "@/assets/images/back.png";
 export default {
     data(){
         return{
           termday:10000,
-          // assetsImage: AssetsImage,
         }
     },
   mounted(){
@@ -35,4 +33,9 @@ export default {
 </script>
 
 <style scoped>
+header{
+  background-image:url('~@/assets/images/back0.jpg');
+  background-repeat:none;
+  background-size:cover;
+}
 </style>
