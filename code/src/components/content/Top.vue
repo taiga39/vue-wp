@@ -1,6 +1,6 @@
 <template>
 <div>
-  <Headeritem/>
+  <Headeritem :jsondata="jsondata"/>
   <article>
     <div class="container">
       <div class="row">
@@ -9,7 +9,6 @@
       </div>
     </div>
   </article>
-  {{title}}
 </div>
 </template>
 
