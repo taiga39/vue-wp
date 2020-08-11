@@ -19,7 +19,22 @@ export default {
     name: 'app',
     components : {
       Headeritem
-  }
+  },
+  head: {
+    title: function () {
+      return {
+        inner: "自分について",
+        separator: '|',
+        complement: 'Gal☆Blog（ギャルブログ）'
+      }
+    },
+    meta: [
+      { name: 'description', content: '自分についてです。Gal☆Blog（ギャルブログ）' },
+      { property: 'og:title', content: '自分について | Gal☆Blog（ギャルブログ）' },
+      { property: 'og:description', content: '自分についてです。Gal☆Blog（ギャルブログ）' },
+      // { property: 'og:image', content: 'Gal☆Blog（ギャルブログ）' },
+    ],
+  },
 }
 </script>
 

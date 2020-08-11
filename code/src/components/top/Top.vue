@@ -52,6 +52,15 @@ export default {
       termday:10000
     }
   },
+  head: {
+    meta: [
+      { name: 'description', content: 'Gal☆Blog（ギャルブログ）のトップページです' },
+      { property: 'og:title', content: 'Gal☆Blog（ギャルブログ）' },
+      { property: 'og:description', content: 'Gal☆Blog（ギャルブログ）のトップページです' },
+      // { property: 'og:image', content: 'Gal☆Blog（ギャルブログ）' },
+
+    ],
+  },
   props:["jsondata"],
   methods: {
     change: function(num){
